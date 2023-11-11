@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="">
+  <title>Careers</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: roboto;
+    }
+    
+    #banner {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-2 mb-5 mt-3">{{ company_name }} Careers</h1>
+    <img class="img-fluid" id="banner" src="https://media.licdn.com/dms/image/C4D1BAQHKO_ArU7G4lA/company-background_10000/0/1639995723983/kielements_cover?e=1700136000&v=beta&t=8mkt1omwnxD3p3aqyfvsh7j9XmWEUWYfuVk4du04qO4" alt="ki:elements">
+    <h2 class='text-center my-5'>About Ki-Elements</h2>
+    <p class='text-justify'>ki:elements is a German software company that specializes in speech biomarkers. Speech biomarkers are vocal characteristics that can be used to identify and monitor a variety of medical conditions, including Alzheimer's disease, Parkinson's disease, and depression.
+
+    ki:elements has developed a platform that can be used to analyze speech biomarkers and generate reports that can be used by clinicians to diagnose and monitor patients. The platform is based on machine learning and artificial intelligence, and it has been trained on a large dataset of speech data from patients with a variety of medical conditions.
+
+    ki:elements' platform is being used by clinicians and researchers around the world to improve the diagnosis and management of a variety of medical conditions. For example, the platform is being used to develop new diagnostic tools for Alzheimer's disease and to monitor the progression of Parkinson's disease.
+
+    In addition to its work on speech biomarkers, ki:elements is also developing other AI-powered solutions for the healthcare industry. For example, the company is developing a platform that can be used to analyze medical images and generate reports that can be used by clinicians to diagnose and monitor patients.
+
+    ki:elements is a young company, but it has already made a significant impact on the healthcare industry. The company's platform is being used by clinicians and researchers around the world to improve the diagnosis and management of a variety of medical conditions.
+
+    Here are some of the benefits of using ki:elements' platform:
+
+    Improved accuracy: ki:elements' platform can help clinicians to improve the accuracy of their diagnoses by providing them with additional information about their patients' speech biomarkers.
+    Earlier diagnosis: ki:elements' platform can help clinicians to diagnose diseases earlier, when they are more treatable.
+    Better monitoring: ki:elements' platform can help clinicians to better monitor the progression of diseases and the effectiveness of treatments.
+    Reduced costs: ki:elements' platform can help to reduce the cost of healthcare by helping clinicians to make more accurate and timely diagnoses and by helping them to monitor the progression of diseases more effectively.
+    Overall, ki:elements is a promising company that is developing AI-powered solutions that have the potential to improve the healthcare industry.</p>
+    <h2 class='text-center my-5'>Open Jobs</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+    <div class='text-center'>
+      <button class="btn btn-primary btn-lg my-4">Contact Us</button>
+      <p>Copyright 2023, Ki:Elements</p>
+    </div>
+  </div>
+</body>
+</body>
+</body>
+</html>
