@@ -11,7 +11,7 @@ JOBS = load_jobs_from_db()
 JOBS = [
     {
         'id': 1,
-        'title': 'Backend Developer',
+        'title': 'Working Student Backend Developer',
         'location': 'Remote',
         'salary': '€20/h',
         'technology': 'Python, Django, Flask, PostgreSQL, Redis, MongoDB, PostgreSQL, MySQL'
@@ -19,7 +19,7 @@ JOBS = [
   
     {
         'id': 2,
-        'title': 'Frontend Developer',
+        'title': 'Working Student Frontend Developer',
         'location': 'Saarbruken',
         'salary': '€15/h',
         'technology': 'HTML, CSS, Javascript, React, Redux, Node, Express, PostgreSQL, MongoDB'
@@ -27,7 +27,7 @@ JOBS = [
   
     {
         'id': 3,
-        'title': 'Data Scientist',
+        'title': 'Working Student Data Scientist',
         'location': 'Berlin',
         'salary': '€25/h',
         'technology': 'Python, Pandas, Numpy, Matplotlib, Seaborn, scikit-learn'
@@ -35,7 +35,7 @@ JOBS = [
   
     {
         'id': 4,
-        'title': 'UI/UX',
+        'title': 'Working Student UI/UX',
         'location': 'Wolfsburg',
         'salary': '12/h euro',
         'technology': 'Figma, Photoshop, Illustrator, After Effects, XD'
@@ -43,7 +43,7 @@ JOBS = [
   
     {
         'id': 5,
-        'title': 'System Administrator',
+        'title': 'Working Student System Administrator',
         'location': 'Munic',
         'salary': '€18/h',
         'technology': 'Linux, Microsoft, SQL, Database Management'
@@ -51,7 +51,7 @@ JOBS = [
   
     {
         'id': 6,
-        'title': 'Security Analyst',
+        'title': 'Working Student Security Analyst',
         'location': 'Frankfurt',
         'salary': '€21/h',
         'technology': 'Application & Network Security, Cryptography, HIPAA, PCI/DSS, ISO 27001, GDPR'
