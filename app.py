@@ -13,19 +13,48 @@ JOBS = [
         'id': 1,
         'title': 'Backend Developer',
         'location': 'Remote',
-        'salary': '19/h euro'
+        'salary': '€20/h',
+        'technology': 'Python, Django, Flask, PostgreSQL, Redis, MongoDB, PostgreSQL, MySQL'
     },
+  
     {
         'id': 2,
         'title': 'Frontend Developer',
-        'location': 'Germany',
-        'salary': '15/h euro'
+        'location': 'Saarbruken',
+        'salary': '€15/h',
+        'technology': 'HTML, CSS, Javascript, React, Redux, Node, Express, PostgreSQL, MongoDB'
     },
+  
     {
         'id': 3,
         'title': 'Data Scientist',
-        'location': 'Germany',
-        'salary': '17/h euro'
+        'location': 'Berlin',
+        'salary': '€25/h',
+        'technology': 'Python, Pandas, Numpy, Matplotlib, Seaborn, scikit-learn'
+    },
+  
+    {
+        'id': 4,
+        'title': 'UI/UX',
+        'location': 'Wolfsburg',
+        'salary': '12/h euro',
+        'technology': 'Figma, Photoshop, Illustrator, After Effects, XD'
+    },
+  
+    {
+        'id': 5,
+        'title': 'System Administrator',
+        'location': 'Munic',
+        'salary': '€18/h',
+        'technology': 'Linux, Microsoft, SQL, Database Management'
+    },
+  
+    {
+        'id': 6,
+        'title': 'Security Analyst',
+        'location': 'Frankfurt',
+        'salary': '€21/h',
+        'technology': 'Application & Network Security, Cryptography, HIPAA, PCI/DSS, ISO 27001, GDPR'
     },
 ]
 
