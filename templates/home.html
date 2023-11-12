@@ -19,7 +19,7 @@
     }
     
     #banner {
-      max-height: 460px;
+      max-height: 360px;
       width: 100%;
       object-fit: fill;
     }
@@ -35,11 +35,13 @@
   <div class="container">
     {% include 'nav.html' %}
   </div>
-  <div class="container mb-5" style="margin-top: 150px;">
+  <div class="container mb-md-5" style="margin-top: 150px;">
     <h1 class="text-center mt-2 mb-5 mt-3" style="margin-top: 46px;">{{ company_name }} Careers</h1>
-    <img id="banner" class="img-fluid" src="https://media.licdn.com/dms/image/C4D1BAQHKO_ArU7G4lA/company-background_10000/0/1639995723983/kielements_cover?e=1700136000&v=beta&t=8mkt1omwnxD3p3aqyfvsh7j9XmWEUWYfuVk4du04qO4" alt="ki:elements">
+    <img id="banner" class="img-fluid object-md-fit-contain" 
+      src="https://media.licdn.com/dms/image/C4D1BAQHKO_ArU7G4lA/company-background_10000/0/1639995723983/kielements_cover?e=1700136000&v=beta&t=8mkt1omwnxD3p3aqyfvsh7j9XmWEUWYfuVk4du04qO4" 
+      alt="ki:elements">
     <h2 class='text-center my-5' id="about">About Ki-Elements</h2>
-    <p class='text-justify mb-4'>ki:elements is a German software company that specializes in speech biomarkers. Speech biomarkers are vocal characteristics that can be used to identify and monitor a variety of medical conditions, including Alzheimer's disease, Parkinson's disease, and depression.
+    <p class='text-justify mb-4 text-secondary'>ki:elements is a German software company that specializes in speech biomarkers. Speech biomarkers are vocal characteristics that can be used to identify and monitor a variety of medical conditions, including Alzheimer's disease, Parkinson's disease, and depression.
 
     ki:elements has developed a platform that can be used to analyze speech biomarkers and generate reports that can be used by clinicians to diagnose and monitor patients. The platform is based on machine learning and artificial intelligence, and it has been trained on a large dataset of speech data from patients with a variety of medical conditions.
 
@@ -57,13 +59,24 @@
     Reduced costs: ki:elements' platform can help to reduce the cost of healthcare by helping clinicians to make more accurate and timely diagnoses and by helping them to monitor the progression of diseases more effectively.
     Overall, ki:elements is a promising company that is developing AI-powered solutions that have the potential to improve the healthcare industry.</p>
     <h2 class='text-center my-5' id="career">Open Jobs</h2>
+    <div class="row my-3">
+      <div class="col-md-6 col-lg-3">
+        <h3>Shape the future of health</h3>
+        <h5 class="text-primary">Inspire & get inspired</h5>
+        <p class='text-justify'>Excited to meet you and talk about your ideas, visions or possible collaboration – no matter if your background is in pharma, research or healthcare. 
+          Feel free to contact us directly via our LinkedIn profiles linked below.</p>
+      </div>
+      <div class="col-md-6 col-lg-9 ps-md-5">
+        <img class="img-fluid" src="https://cdn.join.com/64870ead46ff6800076ec9a6/ki-elements-image-orig.jpg" alt="ki:elements group image">
+      </div>
+    </div>
     <div>
       {% for job in jobs %}
         {% include 'jobitem.html' %}
       {% endfor %}
     </div>
-    <div class='text-center mt-5'>
-      <button class="btn btn-primary btn-lg my-4">Contact Us</button>
+    <div class='text-center mt-md-5 mt-5'>
+      <a href="mailto:info@ki-elements.de?subject=Question%20about%20job%20openings%20at%20Ki%3AElements&body=Name%20%3Cyour%20name%3E%0D%0AAddress%20%3Cyour%20address%3E%0D%0A%0D%0AQuestion%20%3Cyour%20question%3E%0D%0A%0D%0A%0D%0A%0D%0ANote%3A%20One%20of%20our%20employee%20will%20respond%20you%20within%207%20working%20days.%20Please%20be%20patience." class="btn btn-primary btn-lg my-md-4">Contact Us</a>
     </div>
   </div>
   {% include 'footer.html' %}
